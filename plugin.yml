@@ -1,0 +1,51 @@
+name: FantasyCalendar
+version: 1.0.0
+main: oyon.mcplugin.fantasycalendar.FantasyCalendar
+
+commands:
+  FC:
+    description: adds seasons to config
+  fcdate:
+    description: gets date commands
+  fcdate date:
+    description: tells player lore date
+  fcdate time:
+    description: tells player time in ticks
+  fcdate setdate [season] [month] [day] [year]:
+    description: modifies current date
+  fc add month [month name] [season]:
+    description: adds month to that season
+  fc add season [season name]:
+    description: adds season
+  fc list months [season name]:
+    description: Lists the months name of that season
+  fc list season:
+    description: Lists all seasons
+  fc reload:
+    description: reloads config
+  fc help:
+    descrition: Lists all commands
+
+permissions:
+  fantasy.*:
+    description: Everything with Fantasy Calendar
+    children:
+      fantasy.setdate: true
+      fantasy.date: true
+      fantasy.time: true
+      fantasy.add: true
+      fantasy.list: true
+      fantasy.reload: true
+  fantasy.setdate:
+    description: Allows player to set date
+  fantasy.date:
+    description: Allows player to view date
+  fantasy.time:
+    description: Allows player to see time in ticks
+  fantasy.add:
+    description: Allows player to add seasons/months to the config
+  fantasy.list:
+    description: Allows player to list all seasons/months in config
+  fantasy.reload:
+    description: Allows player to reload plugin
+    

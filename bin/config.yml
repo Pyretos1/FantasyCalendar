@@ -1,0 +1,43 @@
+# Fantasy Calendar by Oyon
+# Version 1.0.0
+
+Season:
+- Fall
+- Winter
+- Spring
+- Summer
+
+Months:
+  Fall:
+    Month:
+      - September
+      - October
+      - November
+  Winter:
+    Month:
+      - December
+      - January
+      - February
+  Spring:
+    Month:
+      - March
+      - April
+      - May
+  Summer:
+    Month:
+      - June
+      - July
+      - August
+      
+MaxDaysPerMonth: 14
+
+world: world
+
+date_format: Season:%season Month:%month Day:%day Year:%year
+
+#Current date Storage. If altered, can cause errors
+DateStore:
+    current_season: 0
+    current_day: 1
+    current_month: 0
+    current_year: 1
