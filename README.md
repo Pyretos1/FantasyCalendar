@@ -1,6 +1,5 @@
 # FantasyCalendar
-This project is something I was building on the side so it is by no means perfect. I just barely fixed a bug where typing in
-the wrong command spits out an error.
+This project is something I was building on the side so it is by no means perfect.
 
 This particular version was built on Spigot 1.9.
 
